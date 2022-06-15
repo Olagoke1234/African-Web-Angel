@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#topnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e8eff8;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 450px) {
+  #topnav {
+    flex-direction: column;
+    height: 65px;
+  }
+}
+
+#topnav h1 {
+  color: #4b2759;
+  font-family: "Marck Script", cursive;
+  padding: 10px;
+}
+
+.navbar ul {
+  display: inline-flex;
+}
+
+@media only screen and (max-width: 450px) {
+  .navbar ul {
+    margin-bottom: -5px;
+  }
+}
+.navbar ul li {
+  margin: 0 5px;
+  padding: 0 5px;
+  list-style: none;
+}
+
+.navbar ul li:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px #888888;
+  border-radius: 3px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-family: "Mukta", sans-serif;
+  font-size: 18px;
+  color: #4b2759;
+}
+
+.navbar ul li a:hover {
+  text-shadow: 0.5px 0.5px 0.5px;
+  font-family: "Mukta", sans-serif;
+  font-size: 18px;
+  color: #4b2759;
+}
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./images/picture-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 1;
+  padding: 180px 50px;
+}
+
+@media only screen and (min-width: 880px) {
+  .intro {
+    flex-direction: row;
+  }
+}
+
+.intro img {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 880px) {
+  .intro img {
+    margin-right: 40px;
+  }
+}
+
+.intro .profile-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro h2 {
+  color: #0061ff;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-family: "Titillium Web", sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+
+.intro p {
+  height: auto;
+  max-width: 600px;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  font-weight: 5px;
+  line-height: 2rem;
+  letter-spacing: 3px;
+  padding: 20px;
+  color: #0061ff;
+}
+
+.about-me {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  font-size: 15px;
+}
+
+.about-me h2 {
+  font-family: "Mukta", sans-serif;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #0061ff;
+}
+
+.about-me p {
+  font-family: "Mukta", sans-serif;
+  font-size: 17px;
+  text-align: justify;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  max-width: 1200px;
+  height: auto;
+  line-height: 2rem;
+}
+
+.projects {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects h2 {
+  color: #0061ff;
+  font-family: "Mukta", sans-serif;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.projects .project-tiles {
+  width: 400px;
+}
