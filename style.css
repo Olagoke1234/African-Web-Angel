@@ -12,16 +12,16 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: #e8eff8;
-  height: 50px;
+  height: 70px;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 1;
 }
 
 @media only screen and (max-width: 450px) {
   #topnav {
     flex-direction: column;
-    height: 65px;
+    height: 70px;
   }
 }
 
@@ -33,6 +33,7 @@ body {
 
 .navbar ul {
   display: inline-flex;
+  margin-right: 20px;
 }
 
 @media only screen and (max-width: 450px) {
@@ -55,14 +56,14 @@ body {
 .navbar ul li a {
   text-decoration: none;
   font-family: "Mukta", sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   color: #4b2759;
 }
 
 .navbar ul li a:hover {
   text-shadow: 0.5px 0.5px 0.5px;
   font-family: "Mukta", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #4b2759;
 }
 
@@ -294,7 +295,7 @@ body {
 }
 
 .skills-interest {
-  width: 450px;
+  width: 350px;
   height: 50px;
   background-color: white;
   padding: 10px;
