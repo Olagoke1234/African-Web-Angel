@@ -39,7 +39,7 @@ body {
   color: #4b2759;
   font-family: "Marck Script", cursive;
   padding: 10px;
-  animation: topnav-h1-load 2s ease-in;
+  animation: topnav-h1-load 4s ease-in;
 }
 
 @keyframes topnav-h1-load {
@@ -47,12 +47,12 @@ body {
     transform: translateX(-100%);
   }
   100% {
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
 .navbar {
-  animation: topnav-navbar-load 2s ease-in;
+  animation: topnav-navbar-load 4s ease-in;
 }
 
 @keyframes topnav-navbar-load {
@@ -60,7 +60,7 @@ body {
     transform: translateX(100%);
   }
   100% {
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
@@ -111,6 +111,16 @@ body {
   background-attachment: fixed;
   opacity: 1;
   padding: 180px 50px;
+  animation: intro-load 5s ease-in;
+}
+
+@keyframes intro-load {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @media only screen and (min-width: 880px) {
