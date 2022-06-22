@@ -27,11 +27,16 @@
         <div class="navbar">
           <ul>
             <li><a href="#intro">Home</a></li>
-            <li><a href="#about-me">About Me</a></li>
+            <li id="contact-child">
+              <a href="#about-me">About Me</a>
+              <ul class="child-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#skills">Skills&SInterests</a></li>
+              </ul>
+            </li>
             <li>
-              <a href="#contact">Contact</a>
-              <!-- <a href="">Projects</a>
-              <a href="">Certifications</a> -->
+              <a href="#contact">Contact </a>
             </li>
           </ul>
         </div>
@@ -44,7 +49,7 @@
         <p>FRONT END DEVELOPER</p>
       </div>
     </article>
-    <main class="about-me">
+    <main class="about-me" id="about-me">
       <h2>ABOUT ME</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
@@ -55,7 +60,7 @@
         perferendis fugiat.
       </p>
     </main>
-    <main class="projects">
+    <main id="projects">
       <h2>PROJECTS</h2>
       <div class="project-tiles">
         <div class="tiles">
@@ -83,7 +88,7 @@
         </div>
       </div>
     </main>
-    <div class="certifications">
+    <div id="certifications">
       <h2>CERTIFICATIONS</h2>
       <div class="certified-section">
         <div class="certified">
@@ -106,7 +111,7 @@
         </div>
       </div>
     </div>
-    <div class="skills">
+    <div id="skills">
       <h2>SKILLS AND INTERESTS</h2>
       <div class="skills-interest-container">
         <div class="skills-interest">

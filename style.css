@@ -65,7 +65,10 @@ body {
 }
 
 .navbar ul {
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   margin-right: 20px;
 }
 
@@ -78,6 +81,54 @@ body {
   margin: 0 5px;
   padding: 0 5px;
   list-style: none;
+}
+
+.navbar ul #contact-child {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.navbar ul #contact-child .child-links {
+  display: none;
+  position: absolute;
+  bottom: -25px;
+  right: -20px;
+  text-align: center;
+}
+
+.navbar ul #contact-child:hover .child-links {
+  display: inline-flex;
+  margin: -3px 5px;
+  padding: 0 10px;
+  list-style: none;
+  animation: child-link-display 1s ease-in;
+}
+
+@keyframes child-link-display {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.navbar ul #contact-child .child-links li {
+  background-color: #888888;
+  margin: 2px;
+  border-radius: 3px;
+  width: 100px;
+}
+
+.navbar ul #contact-child .child-links li a {
+  text-decoration: none;
+  font-family: "Mukta", sans-serif;
+  font-size: 14px;
+  color: white;
 }
 
 .navbar ul li:hover {
@@ -207,7 +258,7 @@ body {
   line-height: 2rem;
 }
 
-.projects {
+#projects {
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -217,14 +268,14 @@ body {
   padding-top: 30px;
 }
 
-.projects h2 {
+#projects h2 {
   color: #0061ff;
   font-family: "Mukta", sans-serif;
   margin-bottom: 20px;
   font-size: 20px;
 }
 
-.projects .project-tiles {
+#projects .project-tiles {
   width: auto;
   height: auto;
   display: flex;
@@ -233,7 +284,7 @@ body {
   align-items: center;
 }
 
-.projects .project-tiles .tiles {
+#projects .project-tiles .tiles {
   width: 400px;
   height: 400px;
   display: flex;
@@ -247,19 +298,19 @@ body {
   border-radius: 10px;
 }
 
-.projects .project-tiles .tiles img {
+#projects .project-tiles .tiles img {
   width: 300px;
   height: 300px;
 }
 
-.projects .project-tiles .tiles h3 {
+#projects .project-tiles .tiles h3 {
   width: 200px;
   height: 200px;
   font-family: "Abril Fatface", cursive;
   margin-top: 15px;
 }
 
-.projects .project-tiles .tiles p {
+#projects .project-tiles .tiles p {
   width: 300px;
   height: 300px;
   font-family: "Open Sans", sans-serif;
@@ -267,7 +318,7 @@ body {
   margin-top: 15px;
 }
 
-.certifications {
+#certifications {
   width: auto;
   height: auto;
   display: flex;
@@ -278,7 +329,7 @@ body {
   margin-top: 20px;
 }
 
-.certifications h2 {
+#certifications h2 {
   color: black;
   font-family: "Mukta", sans-serif;
   margin-bottom: 20px;
@@ -319,7 +370,7 @@ body {
   margin-top: 15px;
 }
 
-.skills {
+#skills {
   background-color: rgb(236, 231, 231);
   display: flex;
   flex-direction: column;
@@ -329,7 +380,7 @@ body {
   padding-bottom: 40px;
 }
 
-.skills h2 {
+#skills h2 {
   color: black;
   font-family: "Open Sans", sans-serif;
   font-size: 17px;
